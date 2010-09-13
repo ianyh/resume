@@ -1,0 +1,116 @@
+\documentclass{article}
+\usepackage{geometry}
+\usepackage{fullpage}
+\setlength{\parindent}{0pc}
+%\setlength{\parskip}{1pc}
+\setlength{\topmargin}{-3pc}
+\setlength{\textheight}{9.5in}
+%\setlength{\textwidth}{7in}
+
+% test
+\usepackage{hyperref}
+\usepackage{amssymb}
+
+    \newcounter{myfootertablecounter}
+
+    \newcommand\myfootnotemark{%
+    %\refstepcounter{footnote}%
+    \addtocounter{footnote}{1}%
+    \footnotemark[\thefootnote]%
+    }%
+
+    \newcommand\myfootnotetext[1]{%
+    \addtocounter{myfootertablecounter}{1}
+    \footnotetext[\value{myfootertablecounter}]{#1}
+    }
+
+    % from now on, myfootnote has to be used rather than footnote to
+    % adapt the myfootercounter
+    \newcommand\myfootnote[1]{%
+    \addtocounter{myfootertablecounter}{1}
+    \footnote{#1}
+    }%
+
+\begin{document}
+\pagestyle{empty}
+
+\pagestyle{empty}
+\begin{center}
+\begin{tabular}{r|l}
+\multicolumn{2}{c}{\large\bf Ian G Ynda-Hummel}\\
+\multicolumn{2}{c}{\tt ianyh@mit.edu}\\
+\multicolumn{2}{c}{(323) 376-4858}\\
+{\it (school)} & {\it (home)}\\
+290 Massachusetts Ave & 3849 Locke Ave\\
+Cambridge, MA 02139 & Los Angeles, CA 90032
+\end{tabular}
+\end{center}
+
+%\begin{center}
+%{\large\bf Ian G Ynda-Hummel}\\
+%\small{ianyh@mit.edu\\
+%290 Massachusetts Ave\\
+%Cambridge, MA 02139\\
+%(323) 376-4858}
+%\end{center}
+
+\begin{tabular}{llr}
+
+\multicolumn{2}{l}{{\large \bf Education} \vspace{1mm}}& \\
+& {\bf Massachusetts Institute of Technology} & Candidate for BS in Computer Science\\
+& {\it (Current GPA: 4.2/5.0)} & \vspace{1mm} and Electrical Engineering 2011\\
+& & {\it Relevant Coursework: } \\
+& & Elements of Software Construction {\it (6.005)}\\
+& & Computation Structures {\it (6.004)}\\
+& & Introduction to Algorithms {\it (6.006)}\\
+& & Principles of Applied Mathematics {\it (18.310)}\\
+& & Operating Systems Engineering {\it (6.828)}\\
+& & Theory of Computation {\it (6.840)}\\
+& & Computer Systems Engineering {\it (6.033) (in progress)}\\
+& & Computer and Network Security {\it (6.840) (in progress)}\\
+
+& \vspace{2mm}{\bf James A. Garfield Computer Science Magnet} & Diploma 2007 \\ 
+\\
+\cline{2-3}\\
+\multicolumn{2}{l}{{\large\bf Experience}  \vspace{1mm}}& \\
+& {\bf Shop It To Me} & June 2009 - August 2009\\
+& \multicolumn{2}{l}{\emph{   Software Engineering Intern}} \\
+& \multicolumn{2}{p{6in}}{Implemented an HTML processing framework with a DSL API in Ruby to streamline processing of retailer data.}\\\\
+& {\bf StreamBase Systems} & June 2008 - August 2008\\
+& \multicolumn{2}{l}{\emph{   Software Engineering Intern}} \\
+& \multicolumn{2}{p{6in}}{Produced a demo application for inclusion in the StreamBase IDE for displaying real-time updates of profit and loss in a Java graphical interface.} \\\\
+& {\bf DemiDec Resources} & March 2006 - April 2007 \\
+& \multicolumn{2}{l}{\emph{   Editor}} \\
+& \multicolumn{2}{p{6in}}{Worked as en editor of various supplementary materials for the Academic Decathlon, primarily study guides and mathematics exams.} \\\\
+\cline{2-3}\\
+\multicolumn{2}{l}{{\large\bf Skills} \vspace{1mm} }& \\
+& {\bf Programming Languages}:\\
+& \multicolumn{2}{p{6in}}{
+Proficient in Java, C, Objective-C, Python, and Ruby.
+} \\
+& \multicolumn{2}{p{6in}}{
+Familiar with Perl, C++, JavaScript, Lisp/Scheme, SQL, and PHP.
+} \\
+& \multicolumn{2}{p{6in}}{
+Experience with various application frameworks including Cocoa, SWT, and Rails.
+}\\\\
+& {\bf Operating Systems}:\\
+& \multicolumn{2}{p{6in}}{
+Experience with Windows XP and various Unix-like systems, including extensive use of Mac OSX and Ubuntu.
+}\\
+\\
+\cline{2-3}\\
+\multicolumn{2}{l}{{\large\bf Organizations and Activities} \vspace{1mm}}& \\
+& Academic Decathlon & July 2004-March 2007\\
+& \emph{   Team Captain} & 2006-2007 \\
+\\
+%\cline{2-3}\\
+%\multicolumn{2}{l}{{\large\bf Awards} \vspace{1mm}} &\\
+%&Academic Decathlon &\\
+%& \emph{   LAUSD Highest Scoring Scholastic} & 2006, 2007\\
+%& \emph{   LAUSD Second Highest Scoring Student} & 2006, 2007\\
+%& \emph{   California Highest Scoring Student} & 2007\\
+
+\end{tabular}
+
+\end{document}
