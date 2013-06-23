@@ -1,116 +1,143 @@
 \documentclass{article}
 \usepackage{geometry}
 \usepackage{fullpage}
+\usepackage{hyperref}
 \setlength{\parindent}{0pc}
-%\setlength{\parskip}{1pc}
 \setlength{\topmargin}{-3pc}
 \setlength{\textheight}{9.5in}
-%\setlength{\textwidth}{7in}
 
-% test
 \usepackage{hyperref}
 \usepackage{amssymb}
 
-    \newcounter{myfootertablecounter}
-
-    \newcommand\myfootnotemark{%
-    %\refstepcounter{footnote}%
-    \addtocounter{footnote}{1}%
-    \footnotemark[\thefootnote]%
-    }%
-
-    \newcommand\myfootnotetext[1]{%
-    \addtocounter{myfootertablecounter}{1}
-    \footnotetext[\value{myfootertablecounter}]{#1}
-    }
-
-    % from now on, myfootnote has to be used rather than footnote to
-    % adapt the myfootercounter
-    \newcommand\myfootnote[1]{%
-    \addtocounter{myfootertablecounter}{1}
-    \footnote{#1}
-    }%
+\newcounter{myfootertablecounter}
 
 \begin{document}
 \pagestyle{empty}
 
-\pagestyle{empty}
+%%%%
+% Start Header
+
 \begin{center}
-\begin{tabular}{r|l}
-\multicolumn{2}{c}{\large\bf Ian G Ynda-Hummel}\\
-\multicolumn{2}{c}{\tt ianyh@mit.edu}\\
-\multicolumn{2}{c}{(323) 376-4858}\\
-{\it (school)} & {\it (home)}\\
-290 Massachusetts Ave & 3849 Locke Ave\\
-Cambridge, MA 02139 & Los Angeles, CA 90032
-\end{tabular}
+  {\Large\bf Ian G Ynda-Hummel}\\
+  \href{mailto:ianynda@gmail.com}{\tt ianynda@gmail.com}\\
+  \url{https://github.com/ianyh}\\
+  (323) 376-4858\\
+  Somerville, MA\\
 \end{center}
 
-%\begin{center}
-%{\large\bf Ian G Ynda-Hummel}\\
-%\small{ianyh@mit.edu\\
-%290 Massachusetts Ave\\
-%Cambridge, MA 02139\\
-%(323) 376-4858}
-%\end{center}
+% End Header
+%%%%
+
+\vspace{2mm}
 
 \begin{tabular}{llr}
+ 
+  %%%%
+  % Start Educations
 
-\multicolumn{2}{l}{{\large \bf Education} \vspace{1mm}}& \\
-& {\bf Massachusetts Institute of Technology} & Candidate for BS in Computer Science\\
-& {\it (Current GPA: 4.2/5.0)} & \vspace{1mm} and Electrical Engineering 2011\\
-& & {\it Relevant Coursework: } \\
-& & Elements of Software Construction {\it (6.005)}\\
-& & Computation Structures {\it (6.004)}\\
-& & Introduction to Algorithms {\it (6.006)}\\
-& & Principles of Applied Mathematics {\it (18.310)}\\
-& & Operating Systems Engineering {\it (6.828)}\\
-& & Theory of Computation {\it (6.840)}\\
-& & Computer Systems Engineering {\it (6.033) (in progress)}\\
-& & Computer and Network Security {\it (6.840) (in progress)}\\
+  \multicolumn{2}{l}{{\Large\bf Education} \vspace{1mm}} & \\
+  & {\large\bf Massachusetts Institute of Technology} & BS in Computer Science\\
+  & & \vspace{1mm} and Electrical Engineering 2011\\
+  & {\it Coursework (partial list): } \\
+  & Elements of Software Construction {\it (6.005)}
+  & Design and Analysis of Algorithms {\it (6.046)}\\
+  & Operating Systems Engineering {\it (6.828)}
+  & Theory of Computation {\it (6.840)}\\
+  & Computer Systems Engineering {\it (6.033)}
+  & Computer and Network Security {\it (6.857)}\\
+  & Computer Systems Security {\it (6.858)}\\
+  \\
 
-& \vspace{2mm}{\bf James A. Garfield Computer Science Magnet} & Diploma 2007 \\ 
-\\
-\cline{2-3}\\
-\multicolumn{2}{l}{{\large\bf Experience}  \vspace{1mm}}& \\
-& {\bf Shop It To Me} & June 2009 - August 2009\\
-& \multicolumn{2}{l}{\emph{   Software Engineering Intern}} \\
-& \multicolumn{2}{p{6in}}{Implemented an HTML processing framework with a DSL API in Ruby to streamline processing of retailer data.}\\\\
-& {\bf StreamBase Systems} & June 2008 - August 2008\\
-& \multicolumn{2}{l}{\emph{   Software Engineering Intern}} \\
-& \multicolumn{2}{p{6in}}{Produced a demo application for inclusion in the StreamBase IDE for displaying real-time updates of profit and loss in a Java graphical interface.} \\\\
-& {\bf DemiDec Resources} & March 2006 - April 2007 \\
-& \multicolumn{2}{l}{\emph{   Editor}} \\
-& \multicolumn{2}{p{6in}}{Worked as en editor of various supplementary materials for the Academic Decathlon, primarily study guides and mathematics exams.} \\\\
-\cline{2-3}\\
-\multicolumn{2}{l}{{\large\bf Skills} \vspace{1mm} }& \\
-& {\bf Programming Languages}:\\
-& \multicolumn{2}{p{6in}}{
-Proficient in Java, C, Objective-C, Python, and Ruby.
-} \\
-& \multicolumn{2}{p{6in}}{
-Familiar with Perl, C++, JavaScript, Lisp/Scheme, SQL, and PHP.
-} \\
-& \multicolumn{2}{p{6in}}{
-Experience with various application frameworks including Cocoa, SWT, and Rails.
-}\\\\
-& {\bf Operating Systems}:\\
-& \multicolumn{2}{p{6in}}{
-Experience with Windows XP and various Unix-like systems, including extensive use of Mac OSX and Ubuntu.
-}\\
-\\
-\cline{2-3}\\
-\multicolumn{2}{l}{{\large\bf Organizations and Activities} \vspace{1mm}}& \\
-& Academic Decathlon & July 2004-March 2007\\
-& \emph{   Team Captain} & 2006-2007 \\
-\\
-%\cline{2-3}\\
-%\multicolumn{2}{l}{{\large\bf Awards} \vspace{1mm}} &\\
-%&Academic Decathlon &\\
-%& \emph{   LAUSD Highest Scoring Scholastic} & 2006, 2007\\
-%& \emph{   LAUSD Second Highest Scoring Student} & 2006, 2007\\
-%& \emph{   California Highest Scoring Student} & 2007\\
+  \cline{2-3}\\
 
+  % End Educations
+  %%%%
+
+  %%%%
+  % Start Experience
+  %
+  % Cells have the structure:
+  %
+  % [ ][ Experience ] [ Time ]
+  % [ ][      Language       ]
+  % [ ][     Description     ]
+
+  \multicolumn{2}{l}{{\Large\bf Experience}  \vspace{1mm}} & \\
+
+  %% Twist
+  & {\large\bf Twist} ({\emph Software Engineer}) & August 2011 - May 2013\\
+  & \multicolumn{2}{l}{---  \emph{Objective-C}} \\
+
+  & \multicolumn{2}{p{6in}}{Twist provides a service for sharing ETAs with a
+    vision of providing a platform for time on the mobile web. I designed and
+    implemented the Twist iOS product as part of the iOS team, including
+    extensive work on storage with the CoreData framework, user interface design
+    and implementation, and networking infrastructure to communicate with our
+    server APIs.}\\
+
+  \\
+
+  %% Box
+  & {\large\bf Box} ({\emph Software Engineering Intern}) & January 2011, May 2011 - August 2011\\
+  & \multicolumn{2}{l}{---  \emph{Objective-C}} \\
+
+  & \multicolumn{2}{p{6in}}{Box provides a unified, cross-platform cloud storage
+    service. I designed and began implementation of an experimental uploader
+    application for the Apple App Store, then worked extensively on a major
+    refactoring of the iOS product, as well as working on the design and
+    implementation of the iOS SDK.}\\
+
+  \\
+
+  %% Lablife
+  & {\large\bf Lablife} ({\emph Software Engineering Intern}) & June 2010 - July 2010\\
+  & \multicolumn{2}{l}{---  \emph{Ruby, C++}} \\
+
+  & \multicolumn{2}{p{6in}}{Lablife provided a web service for biological
+    research including lab stock tracking and plasmid creation and cataloging. I
+    worked on a categorization system for an extensive product catalog until the
+    company's end in July of 2010.}\\
+
+  \\
+
+  %% ShopItToMe
+  & {\large\bf ShopItToMe} ({\emph Software Engineering Intern}) & June 2009 - August 2009\\
+  & \multicolumn{2}{l}{---  \emph{Ruby, Java}} \\
+
+  & \multicolumn{2}{p{6in}}{ShopItToMe provides a personal shopping assistant
+    service, compiling sales from over a hundred retailers. I Implemented an
+    HTML scraping and processing framework with a DSL API in Ruby to streamline
+    processing of retailer data.}\\
+
+  \\
+
+  %% StreamBase Systems
+  & {\large\bf StreamBase Systems} ({\emph Software Engineering Intern}) & June 2008 - August 2008\\
+  & \multicolumn{2}{l}{---  \emph{Java}} \\
+
+  & \multicolumn{2}{p{6in}}{StreamBase provides a complex event processing
+    language and IDE. I produced a demo application for inclusion in the
+    StreamBase IDE for displaying real-time updates of profit and loss in a Java
+    graphical interface.} \\
+
+  \\ 
+
+  \cline{2-3}\\
+
+  % End Experience
+  %%%%
+
+  %%%%
+  % Start Skills
+ 
+  \multicolumn{2}{l}{{\Large\bf Skills} \vspace{1mm} }& \\
+  & \multicolumn{2}{p{6in}}{Proficient in Objective-C, Java, C, Python, Ruby, and \LaTeX{}.}\\
+  & \multicolumn{2}{p{6in}}{Familiar with Perl, C++, JavaScript, Lisp/Scheme, SQL, and PHP.}\\
+  & \multicolumn{2}{p{6in}}{Extensive experience with iOS development, some experience with Android development and Mac desktop development.}\\
+
+  % End Skills
+  %%%%
+  
 \end{tabular}
 
 \end{document}

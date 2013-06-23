@@ -2,8 +2,8 @@ LATEX=latex
 DVIPS=dvips
 PS2PDF=ps2pdf
 
-INPUT=hwtemplate
-OUTPUT=output
+INPUT=resume
+OUTPUT=resume
 
 all: dviclean $(OUTPUT).ps $(OUTPUT).pdf
 
