@@ -6,10 +6,9 @@
 \setlength{\topmargin}{-3pc}
 \setlength{\textheight}{9.5in}
 
+\usepackage{changepage}
 \usepackage{hyperref}
 \usepackage{amssymb}
-
-\newcounter{myfootertablecounter}
 
 \begin{document}
 \pagestyle{empty}
@@ -17,127 +16,303 @@
 %%%%
 % Start Header
 
-\begin{center}
-  {\Large\bf Ian G Ynda-Hummel}\\
-  \href{mailto:ianynda@gmail.com}{\tt ianynda@gmail.com}\\
-  \url{https://github.com/ianyh}\\
-  (323) 376-4858\\
-  Somerville, MA\\
-\end{center}
+{
+	{\large\bf Ian G Ynda-Hummel}
+	% A hands-on technical leader with a specialty in iOS development
+}
+
+{
+	\href{mailto:ianynda@gmail.com}{\tt ianynda@gmail.com}
+	$\cdot$
+	\url{https://github.com/ianyh}
+	$\cdot$
+	(323) 376-4858
+}
 
 % End Header
 %%%%
 
+\vspace{6mm}
+
+%%%%
+% Start Experience
+%
+% Cells have the structure:
+%
+% [ ][ Experience ] [ Time ]
+% [ ][      Language       ]
+% [ ][     Description     ]
+
+{\large\bf Work Experience}\\
+
+\vspace{-2mm}
+
+{
+	\hspace{2mm}
+	{\bf PreVeil}
+	({\em Lead Developer})
+	\hfill
+	2/2016 - Present
+}
+
+\vspace{1mm}
+
+\begin{adjustwidth}{3mm}{5mm}
+	\begin{itemize}
+		\setlength\itemsep{-0.25mm}
+		\item Designed and implemented a secure email application. Built entirely in swift.
+		\item Utilized a variety of open source libraries, including Realm, RxSwift, IGListKit, Cartography, Sodium, and Moya.
+		\item Utilized Quick and Nimble for testing.
+	\end{itemize}
+\end{adjustwidth}
+
+\vspace{3mm}
+
+{
+	\hspace{2mm}
+	{\bf CO Everywhere / Ground Signal}
+	({\em Director of Engineering, Product})
+	\hfill
+	6/2013 - 2/2016
+}
+
+\vspace{1mm}
+
+\begin{adjustwidth}{3mm}{5mm}
+	\begin{itemize}
+		\setlength\itemsep{-0.25mm}
+		\item Alongside a non-technical colleague oversaw a team of 2-3 engineers and 1-2 designers.
+		\item Established and continued to manage practices around development and release cycles.
+		\item Contributed as an engineer towards our primary web application, working on everything from low-level model design and management, to performance of Rails controllers, frontend JavaScript application design, and component styles using Slim and Sass.
+		\item Contributed as an engineer towards the platform that gathers and processes the data our products rely on, including some basic computer vision using OpenCV for detecting spam images.
+		\item Fully architected and developed 2 iOS applications, one in Objective-C and later one in Swift.
+		\item Trained and mentored a junior developer in iOS development.
+	\end{itemize}
+\end{adjustwidth}
+
+\vspace{3mm}
+
+{
+	\hspace{2mm}
+	{\bf Twist}
+	({\em Software Engineer})
+	\hfill
+	8/2011 - 5/2013
+}
+
+\vspace{1mm}
+
+\begin{adjustwidth}{3mm}{5mm}
+	\begin{itemize}
+		\setlength\itemsep{-0.25mm}
+		\item Designed and implemented iOS app, including extensive work on storage using the CoreData framework, user interface design and implementation, and networking infrastructure.
+	\end{itemize}
+\end{adjustwidth}
+
+\vspace{3mm}
+
+{\large\bf Projects}\\
+
+\vspace{-2mm}
+
+{
+	\hspace{2mm}
+	{\bf Amethyst}
+	(\href{https://ianyh.com/amethyst}{\tt https://ianyh.com/amethyst})
+}
+
+\vspace{1mm}
+
+\begin{adjustwidth}{3mm}{5mm}
+	\begin{itemize}
+		\setlength\itemsep{-0.25mm}
+		\item Inspired by Linux tiling window managers like xmonad and i3, Amethyst automatically manages windows in the same style on macOS.
+		\item Built the product from the ground up, navigating the perilous waters of Apple’s Accessibility framework to manage window size and position.
+		\item Manage open source contributions, as well as bugs and feature requests from a core user base.
+	\end{itemize}
+\end{adjustwidth}
+
+\vspace{3mm}
+
+{\large\bf Internships}\\
+
+\vspace{-2mm}
+
+{
+	\hspace{2mm}
+	{\bf Box}
+	\hfill
+	1/2011, 5/2011 - 8/2011
+}
+
+\begin{adjustwidth}{4mm}{5mm}
+	\begin{itemize}
+		\setlength\itemsep{-0.25mm}
+		\item Developed experimental uploader application for Mac OS X, worked extensively on a major refactoring of the iOS product, and worked on the design and implementation of the iOS SDK.
+	\end{itemize}
+\end{adjustwidth}
+
 \vspace{2mm}
 
-\begin{tabular}{llr}
- 
-  %%%%
-  % Start Educations
+{
+	\hspace{2mm}
+	{\bf Lablife}
+	\hfill
+	6/2010 - 7/2010
+}
 
-  \multicolumn{2}{l}{{\Large\bf Education} \vspace{1mm}} & \\
-  & {\large\bf Massachusetts Institute of Technology} & BS in Computer Science\\
-  & & \vspace{1mm} and Electrical Engineering 2011\\
-  & {\it Coursework (partial list): } \\
-  & Elements of Software Construction {\it (6.005)}
-  & Design and Analysis of Algorithms {\it (6.046)}\\
-  & Operating Systems Engineering {\it (6.828)}
-  & Theory of Computation {\it (6.840)}\\
-  & Computer Systems Engineering {\it (6.033)}
-  & Computer and Network Security {\it (6.857)}\\
-  & Computer Systems Security {\it (6.858)}\\
-  \\
+\begin{adjustwidth}{4mm}{5mm}
+	\begin{itemize}
+		\setlength\itemsep{-0.25mm}
+		\item Worked on a categorization system in Ruby for an extensive product catalog.
+	\end{itemize}
+\end{adjustwidth}
 
-  \cline{2-3}\\
+\vspace{2mm}
 
-  % End Educations
-  %%%%
+{
+	\hspace{2mm}
+	{\bf ShopItToMe}
+	\hfill
+	6/2009 - 8/2009
+}
 
-  %%%%
-  % Start Experience
-  %
-  % Cells have the structure:
-  %
-  % [ ][ Experience ] [ Time ]
-  % [ ][      Language       ]
-  % [ ][     Description     ]
+\begin{adjustwidth}{4mm}{5mm}
+	\begin{itemize}
+		\setlength\itemsep{-0.25mm}
+		\item Implemented an HTML scraping and processing framework with a DSL API in Ruby to streamline processing of retailer data as a replacement for an existing Java framework.
+	\end{itemize}
+\end{adjustwidth}
 
-  \multicolumn{2}{l}{{\Large\bf Experience}  \vspace{1mm}} & \\
+\vspace{2mm}
 
-  %% Twist
-  & {\large\bf Twist} ({\emph Software Engineer}) & August 2011 - May 2013\\
-  & \multicolumn{2}{l}{---  \emph{Objective-C}} \\
+{
+	\hspace{2mm}
+	{\bf StreamBase Systems}
+	\hfill
+	6/2008 - 8/2008
+}
 
-  & \multicolumn{2}{p{6in}}{Twist provides a service for sharing ETAs with a
-    vision of providing a platform for time on the mobile web. I designed and
-    implemented the Twist iOS product as part of the iOS team, including
-    extensive work on storage with the CoreData framework, user interface design
-    and implementation, and networking infrastructure to communicate with our
-    server APIs.}\\
+\begin{adjustwidth}{4mm}{5mm}
+	\begin{itemize}
+		\setlength\itemsep{-0.25mm}
+		\item Produced a demo application for inclusion in the StreamBase IDE for displaying real-time updates of profit and loss in a Java graphical interface.
+	\end{itemize}
+\end{adjustwidth}
 
-  \\
+\vspace{4mm}
 
-  %% Box
-  & {\large\bf Box} ({\emph Software Engineering Intern}) & January 2011, May 2011 - August 2011\\
-  & \multicolumn{2}{l}{---  \emph{Objective-C}} \\
+{\large\bf Education}\\
 
-  & \multicolumn{2}{p{6in}}{Box provides a unified, cross-platform cloud storage
-    service. I designed and began implementation of an experimental uploader
-    application for the Apple App Store, then worked extensively on a major
-    refactoring of the iOS product, as well as working on the design and
-    implementation of the iOS SDK.}\\
+\vspace{-2mm}
 
-  \\
+{
+	\hspace{2mm}
+	{\bf Massachusetts Institute of Technology}
+}
 
-  %% Lablife
-  & {\large\bf Lablife} ({\emph Software Engineering Intern}) & June 2010 - July 2010\\
-  & \multicolumn{2}{l}{---  \emph{Ruby, C++}} \\
+{
+	\hspace{2mm}
+	B.S. in Computer Science and Electrical Engineering 2011
+}
 
-  & \multicolumn{2}{p{6in}}{Lablife provided a web service for biological
-    research including lab stock tracking and plasmid creation and cataloging. I
-    worked on a categorization system for an extensive product catalog until the
-    company's end in July of 2010.}\\
-
-  \\
-
-  %% ShopItToMe
-  & {\large\bf ShopItToMe} ({\emph Software Engineering Intern}) & June 2009 - August 2009\\
-  & \multicolumn{2}{l}{---  \emph{Ruby, Java}} \\
-
-  & \multicolumn{2}{p{6in}}{ShopItToMe provides a personal shopping assistant
-    service, compiling sales from over a hundred retailers. I Implemented an
-    HTML scraping and processing framework with a DSL API in Ruby to streamline
-    processing of retailer data.}\\
-
-  \\
-
-  %% StreamBase Systems
-  & {\large\bf StreamBase Systems} ({\emph Software Engineering Intern}) & June 2008 - August 2008\\
-  & \multicolumn{2}{l}{---  \emph{Java}} \\
-
-  & \multicolumn{2}{p{6in}}{StreamBase provides a complex event processing
-    language and IDE. I produced a demo application for inclusion in the
-    StreamBase IDE for displaying real-time updates of profit and loss in a Java
-    graphical interface.} \\
-
-  \\ 
-
-  \cline{2-3}\\
-
-  % End Experience
-  %%%%
-
-  %%%%
-  % Start Skills
- 
-  \multicolumn{2}{l}{{\Large\bf Skills} \vspace{1mm} }& \\
-  & \multicolumn{2}{p{6in}}{Proficient in Objective-C, Java, C, Python, Ruby, and \LaTeX{}.}\\
-  & \multicolumn{2}{p{6in}}{Familiar with Perl, C++, JavaScript, Lisp/Scheme, SQL, and PHP.}\\
-  & \multicolumn{2}{p{6in}}{Extensive experience with iOS development, some experience with Android development and Mac desktop development.}\\
-
-  % End Skills
-  %%%%
-  
-\end{tabular}
+%
+% %% Twist
+% & {\large\bf Twist} ({\emph Software Engineer}) & August 2011 - May 2013\\
+% & \multicolumn{2}{l}{---  \emph{Objective-C}} \\
+%
+% & \multicolumn{2}{p{6in}}{Twist provides a service for sharing ETAs with a
+% 	vision of providing a platform for time on the mobile web. I designed and
+% 	implemented the Twist iOS product as part of the iOS team, including
+% 	extensive work on storage with the CoreData framework, user interface design
+% 	and implementation, and networking infrastructure to communicate with our
+% 	server APIs.}\\
+%
+% \\
+%
+% %% Box
+% & {\large\bf Box} ({\emph Software Engineering Intern}) & January 2011, May 2011 - August 2011\\
+% & \multicolumn{2}{l}{---  \emph{Objective-C}} \\
+%
+% & \multicolumn{2}{p{6in}}{Box provides a unified, cross-platform cloud storage
+% 	service. I designed and began implementation of an experimental uploader
+% 	application for the Apple App Store, then worked extensively on a major
+% 	refactoring of the iOS product, as well as working on the design and
+% 	implementation of the iOS SDK.}\\
+%
+% \\
+%
+% %% Lablife
+% & {\large\bf Lablife} ({\emph Software Engineering Intern}) & June 2010 - July 2010\\
+% & \multicolumn{2}{l}{---  \emph{Ruby, C++}} \\
+%
+% & \multicolumn{2}{p{6in}}{Lablife provided a web service for biological
+% 	research including lab stock tracking and plasmid creation and cataloging. I
+% 	worked on a categorization system for an extensive product catalog until the
+% 	company's end in July of 2010.}\\
+%
+% \\
+%
+% %% ShopItToMe
+% & {\large\bf ShopItToMe} ({\emph Software Engineering Intern}) & June 2009 - August 2009\\
+% & \multicolumn{2}{l}{---  \emph{Ruby, Java}} \\
+%
+% & \multicolumn{2}{p{6in}}{ShopItToMe provides a personal shopping assistant
+% 	service, compiling sales from over a hundred retailers. I Implemented an
+% 	HTML scraping and processing framework with a DSL API in Ruby to streamline
+% 	processing of retailer data.}\\
+%
+% \\
+%
+% %% StreamBase Systems
+% & {\large\bf StreamBase Systems} ({\emph Software Engineering Intern}) & June 2008 - August 2008\\
+% & \multicolumn{2}{l}{---  \emph{Java}} \\
+%
+% & \multicolumn{2}{p{6in}}{StreamBase provides a complex event processing
+% 	language and IDE. I produced a demo application for inclusion in the
+% 	StreamBase IDE for displaying real-time updates of profit and loss in a Java
+% 	graphical interface.} \\
+%
+% \\
+%
+% \cline{2-3}\\
+%
+% % End Experience
+% %%%%
+% \begin{tabular}{llr}
+%
+% 	%%%%
+% 	% Start Educations
+%
+% 	\multicolumn{2}{l}{{\Large\bf Education} \vspace{1mm}} & \\
+% 	& {\large\bf Massachusetts Institute of Technology} & BS in Computer Science\\
+% 	& & \vspace{1mm} and Electrical Engineering 2011\\
+% 	& {\it Coursework (partial list): } \\
+% 	& Elements of Software Construction {\it (6.005)}
+% 	& Design and Analysis of Algorithms {\it (6.046)}\\
+% 	& Operating Systems Engineering {\it (6.828)}
+% 	& Theory of Computation {\it (6.840)}\\
+% 	& Computer Systems Engineering {\it (6.033)}
+% 	& Computer and Network Security {\it (6.857)}\\
+% 	& Computer Systems Security {\it (6.858)}\\
+% 	\\
+%
+% 	\cline{2-3}\\
+%
+% 	% End Educations
+% 	%%%%
+%
+% 	%%%%
+% 	% Start Skills
+%
+% 	\multicolumn{2}{l}{{\Large\bf Skills} \vspace{1mm} }& \\
+% 	& \multicolumn{2}{p{6in}}{Proficient in Objective-C, Java, C, Python, Ruby, and \LaTeX{}.}\\
+% 	& \multicolumn{2}{p{6in}}{Familiar with Perl, C++, JavaScript, Lisp/Scheme, SQL, and PHP.}\\
+% 	& \multicolumn{2}{p{6in}}{Extensive experience with iOS development, some experience with Android development and Mac desktop development.}\\
+%
+% 	% End Skills
+% 	%%%%
+%
+% \end{tabular}
 
 \end{document}
